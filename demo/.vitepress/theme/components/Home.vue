@@ -6,13 +6,14 @@
       <span class="accent">XiaoYouEditor</span>
       <br />Custom And Markdown
     </h1>
-    <p class="description">
-      一款用于生成花里胡哨博客内容的编辑器(Vue3插件)
-    </p>
+    <p class="description">一款用于生成花里胡哨博客内容的编辑器(Vue3插件)</p>
     <p class="actions">
       <!-- NOTE: hide the home video -->
       <!-- <vue-mastery-modal /> -->
-      <a class="get-started" href="/guide/introduction.html">
+      <a
+        class="get-started"
+        href="/xiao-you-editor-docs/guide/introduction.html"
+      >
         快速开始
         <svg
           class="icon"
@@ -26,16 +27,16 @@
           />
         </svg>
       </a>
-      <a class="setup" href="/guide/quick-start.html">安装</a>
+      <a class="setup" href="/xiao-you-editor-docs/guide/quick-start.html"
+        >安装</a
+      >
     </p>
   </section>
 
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
       <h2>局部更新</h2>
-      <p>
-        基于 Snabbdom 实现 Virtual DOM,避免了较长内容下修改时的渲染卡顿。
-      </p>
+      <p>基于 Snabbdom 实现 Virtual DOM,避免了较长内容下修改时的渲染卡顿。</p>
     </div>
     <div class="vt-box">
       <h2>自由定制</h2>

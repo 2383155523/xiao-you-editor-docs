@@ -20,7 +20,7 @@
 import { ref } from 'vue'
 const href = ref<string>(
   import.meta.env.DEV
-    ? '/'
+    ? '/xiao-you-editor-docs/'
     : 'https://2383155523.github.io/xiao-you-editor-docs/'
 )
 </script>

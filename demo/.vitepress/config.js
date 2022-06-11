@@ -89,6 +89,13 @@ module.exports = (async () => {
     title: 'XiaoYouEditor',
     description: 'XiaoYouEditor - 一款用于生成花里胡哨博客内容的编辑器',
     themeConfig: {
+      footer: {
+        license: {
+          text: 'MIT License',
+          link: 'https://opensource.org/licenses/MIT'
+        },
+        copyright: `Copyright © 2022-至今 微若蜉蝣`
+      },
       logo: '/img/logo-vue.svg',
 
       // algolia: {
@@ -102,11 +109,9 @@ module.exports = (async () => {
       //   placement: 'vuejsorg'
       // },
 
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/vuejs/vue' },
-      ],
+      socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vue' }],
       nav,
-      sidebar,
+      sidebar
     }
   }
 })()
