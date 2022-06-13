@@ -76,8 +76,8 @@ section {
 
 html:not(.dark) .accent,
 .dark .tagline {
-  /* background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff); */
-  background: -webkit-linear-gradient(315deg, #b2ed87 25%, #db6ffb);
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  /* background: -webkit-linear-gradient(315deg, #b2ed87 25%, #db6ffb); */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

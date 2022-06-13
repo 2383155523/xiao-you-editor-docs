@@ -2,7 +2,6 @@
 import { useData } from 'vitepress'
 import { inject } from 'vue'
 import { MenuItemWithLink } from '../../core'
-import { isActive } from '../support/utils'
 
 defineProps<{
   item: MenuItemWithLink
@@ -10,11 +9,18 @@ defineProps<{
 
 const { page } = useData()
 const closeSideBar = inject('close-sidebar') as () => void
+
+const isActiveLink = (relativePath: string, link: string) => {
+  link = link.replace('/xiao-you-editor-docs/', '')
+  link = link.replace('.html', '')
+  relativePath = relativePath.replace('.md', '')
+  return relativePath == link
+}
 </script>
 
 <template>
   <a
-    :class="{ link: true, active: isActive(page.relativePath, item.link) }"
+    :class="{ link: true, active: isActiveLink(page.relativePath, item.link) }"
     :href="item.link"
     @click="closeSideBar"
   >

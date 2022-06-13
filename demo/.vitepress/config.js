@@ -12,7 +12,7 @@ const nav = [
   {
     text: 'Demo',
     activeMatch: `^/demo/`,
-    link: '/demo/'
+    link: 'https://2383155523.github.io/xiao-you-editor-example/#/editor-custom'
   },
   {
     text: '小组件',
@@ -45,16 +45,20 @@ const sidebar = {
       text: 'Props配置',
       items: [
         {
-          text: 'v-model',
+          text: 'v-model(通用)',
           link: '/guide/props/v-model'
         },
         {
-          text: 'utils',
+          text: 'utils(通用)',
           link: '/guide/props/utils'
         },
         {
-          text: 'styles',
+          text: 'styles(通用)',
           link: '/guide/props/styles'
+        },
+        {
+          text: 'renderer(MD)',
+          link: '/guide/props/renderer'
         }
       ]
     },
@@ -96,20 +100,14 @@ module.exports = (async () => {
         },
         copyright: `Copyright © 2022-至今 微若蜉蝣`
       },
-      logo: '/img/logo-vue.svg',
+      logo: '',
 
-      // algolia: {
-      //   indexName: 'vuejs-v3',
-      //   appId: 'BH4D9OD16A',
-      //   apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
-      // },
-
-      // carbonAds: {
-      //   code: 'CEBDT27Y',
-      //   placement: 'vuejsorg'
-      // },
-
-      socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vue' }],
+      socialLinks: [
+        {
+          icon: 'github',
+          link: 'https://github.com/2383155523/xiao-you-editor'
+        }
+      ],
       nav,
       sidebar
     }

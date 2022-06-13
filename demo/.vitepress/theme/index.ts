@@ -3,7 +3,7 @@ import { h } from 'vue'
 import Home from './components/Home.vue'
 
 // uncomment to test CSS variables override
-// import './override.css'
+import './override.css'
 
 export default {
   ...VPTheme,

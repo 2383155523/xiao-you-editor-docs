@@ -1,4 +1,4 @@
-# 简介 {#introduction}
+# 简介
 
 :::tip 使用本插件建议拥有的知识储备
 
@@ -6,7 +6,7 @@
 - 因为本插件的高度定制化依赖于 [WebComponent](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components) 所以建议您最好有了解过 [WebComponent](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)的概念或者了解过 [Vue3](https://staging-cn.vuejs.org/) 的 [defineCustomElement](https://staging-cn.vuejs.org/guide/extras/web-components.html) API 。
   :::
 
-## 为什么要使用 xiaoYouEditor? {#why-use-xiao-you-edit}
+## 为什么要使用 xiaoYouEditor?
 
 如果您有打算自己手写一个花里胡哨的博客系统的打算,那么您首先需要考虑到的一个问题就是
 
@@ -18,7 +18,7 @@
 
 现如今,您有了另一个更好的选择——<b style="color:#42b883;">xiaoYouEditor</b>
 
-## 如何使用 xiaoYouEditor? {#how-to-use-xiao-you-edit}
+## 如何使用 xiaoYouEditor?
 
 ### 首先
 
@@ -36,7 +36,7 @@
 
 如果您想追求极致的美观和定制能力,可以选择 Custom 版的编辑器。
 
-## Custom Vs Markdown {#custom-vs-markdown}
+## Custom Vs Markdown
 
 ### Markdown
 
@@ -56,6 +56,6 @@ Custom 版编辑器利用浏览器原生的 WebComponent 解析能力全面支�
 
 其实这两个版本的选择说到底就是 “普通花哨” 和 “更花哨” , "Markdown 写法" 和 "HTML 代码式写法" 之间的喜好问题
 
-## 在线体验 {#use-demo}
+## 在线体验
 
-[点我在线体验](https://fuyouplus.cn)
+[点我在线体验](https://2383155523.github.io/xiao-you-editor-example/#/editor-custom)
