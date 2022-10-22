@@ -3,10 +3,9 @@
 :::tip 使用本插件建议拥有的知识储备
 
 - 因为本插件是基于 [Vue3](https://staging-cn.vuejs.org/) 构建 所以建议您最好拥有 [Vue3](https://staging-cn.vuejs.org/) 的使用经验。
-- 因为本插件的高度定制化依赖于 [WebComponent](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components) 所以建议您最好有了解过 [WebComponent](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)的概念或者了解过 [Vue3](https://staging-cn.vuejs.org/) 的 [defineCustomElement](https://staging-cn.vuejs.org/guide/extras/web-components.html) API 。
   :::
 
-## 为什么要使用 xiaoYouEditor?
+## 为什么要使用 XiaoYouEditor?
 
 如果您有打算自己手写一个花里胡哨的博客系统的打算,那么您首先需要考虑到的一个问题就是
 
@@ -18,44 +17,54 @@
 
 现如今,您有了另一个更好的选择——<b style="color:#42b883;">xiaoYouEditor</b>
 
-## 如何使用 xiaoYouEditor?
+## 如何使用 XiaoYouEditor?
 
-### 首先
+如果您只想渲染一些文字的话那么其实这个插件就是开箱即用的。
 
-您需要创建好自己所需的 WebComponents,如果是使用原生的 WebComponent 创建方法,那属实很麻烦的,不过值得庆幸的是我们有 [Vue3](https://staging-cn.vuejs.org/)。
+如果你想渲染一些花里胡哨的内容,那就不得不借助 Vue 组件来实现。
 
-[Vue3](https://staging-cn.vuejs.org/) 的 [defineCustomElement](https://staging-cn.vuejs.org/guide/extras/web-components.html) API 帮助我们能以写 Vue 单文件组件的形式去创建 WebComponent，毫不夸张的说你只要会写 Vue 单文件组件，那就能很轻松的创建出 WebComponent
+定义一个自定义的渲染组件很简单,首先创建一个组件然后注册为全局组件即可,看吧是不是非常的简单易上手。
 
-不过更值得庆幸的是,作者提供了一些自用的 WebComponent,如果这些[小组件](https://fuyouplus.cn)能够刚好满足博友们的需求,那就会省下更多的时间,这也是作者所期望的。
+此时肯定有人会说
 
-### 其次
+”不就是把一堆内容全部集中在一个组件里了,总不能让组件一直显示静态的文字内容吧?“
 
-您需要选择编辑器的版本。
+作者答
 
-如果您钟爱 Markdown 的写法,可以选择 Markdown 版的编辑器。
+“可曾听闻 props 传参?正好编辑器也支持使用 props 动态传入参数,根据传入的 props 您可以动态控制每个组件的渲染内容!”
 
-如果您想追求极致的美观和定制能力,可以选择 Custom 版的编辑器。
+此时一位路过的懒癌患者说
 
-## Custom Vs Markdown
+“还要自己写组件渲染?算了算了”
 
-### Markdown
+作者答
 
-Markdown 版编辑器由 [marked](https://github.com/markedjs/marked) 驱动,它所能解析渲染的组件是由 [marked](https://github.com/markedjs/marked) 的 renderer API 决定。
+“大哥先别 且听小弟一言。”
 
-其实 Markdown 版编辑器也能完成 WebComponent 渲染,在一定程度上功能与 Custom 版编辑器有耦合的地方,但是 Markdown 版编辑器无法解析带有 slot(插槽) 的 WebComponent,这也是 Custom 版编辑器出现的原因。
+“小弟贴心的为各位大哥提供了一堆现成的实用功能组件”
 
-### Custom
+这些[小组件](https://fuyouplus.cn)可都是作者多年积攒的精华哟 ~。~
 
-Custom 版编辑器利用浏览器原生的 WebComponent 解析能力全面支持所有 WebComponent 的渲染,理论上可以做到所有您能想到的任何功能!
+说到这儿 您是不是以为这就是本插件骚操作的极限了吗？
 
-但缺陷是,会增加浏览器的渲染开销,毕竟相比于解析几个普通的 HTML 标签 ,解析一个受封装的 WebComponent 会更加复杂些，不过在有虚拟 DOM 的加持下,进行局部更新,其实这种渲染开销问题几乎可以忽略不计。
+还真是 看人真准
 
-由于 WebComponent 样式隔离机制的存在,导致 书写的 WebComponent 并不能适用全局的 css 样式,不过这个问题也有解法,在后续的章节中会专门讲解到。
+呸呸呸
 
-### 对比
+接下来隆重有请本插件 最帅的 最骚的 最具创造性的 特性——Custom Parse(自定义解析器)
 
-其实这两个版本的选择说到底就是 “普通花哨” 和 “更花哨” , "Markdown 写法" 和 "HTML 代码式写法" 之间的喜好问题
+在此特性的加持下 您甚至可以自己创建一个自己书写内容的语法
 
-## 在线体验
+有人说
 
-[点我在线体验](https://2383155523.github.io/xiao-you-editor-example/#/editor-custom)
+“我习惯了 Markdown 的书写语法”
+
+作者答
+
+“没关系 只要你足够强 你就可以利用自定义解析器去实现 Markdown 的书写语法”
+
+如果想了解该特性更多的细节请移步至进阶篇
+
+## Playground Online
+
+[点我在线体验](https://fuyouplus.gitee.io/xiao-you-editor/#/index)

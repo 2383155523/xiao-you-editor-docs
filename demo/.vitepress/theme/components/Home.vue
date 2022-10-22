@@ -4,9 +4,9 @@
   <section id="hero">
     <h1 class="tagline">
       <span class="accent">XiaoYouEditor</span>
-      <br />Custom And Markdown
+      <br />颜值很高 不算太慢
     </h1>
-    <p class="description">一款用于生成花里胡哨博客内容的编辑器(Vue3插件)</p>
+    <p class="description">一个用于生成花里胡哨内容的编辑器(Vue3插件)</p>
     <p class="actions">
       <!-- NOTE: hide the home video -->
       <!-- <vue-mastery-modal /> -->
@@ -35,20 +35,21 @@
 
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
-      <h2>局部更新</h2>
-      <p>基于 Snabbdom 实现 Virtual DOM,避免了较长内容下修改时的渲染卡顿。</p>
+      <h2>差量更新</h2>
+      <p>基于 Vue3 自动实现 Virtual DOM 差量Diif 避免了较长内容下修改时的渲染卡顿 </p>
     </div>
     <div class="vt-box">
-      <h2>自由定制</h2>
+      <h2>渲染万物</h2>
       <p>
-        基于 WebComponent
-        几乎可以定制所有的博客内容小组件,以此达到完全的自由定制化。
+        可被渲染的内容小到一行文字 大到一个Vue组件
+        只需注册全局组件便可直接在编辑器中书写渲染
       </p>
     </div>
     <div class="vt-box">
       <h2>颜值较高</h2>
       <p>
-        编辑器提供了多种背景图组合模式,既可以单张背景图覆盖,也可以多张背景图拼凑
+        编辑器内置深浅两套主题样式 如果你是一名懒癌患者 这将是你的福音
+        再者你有较高的定制化需求也可通过开放的props自行配置深浅样式
       </p>
     </div>
   </section>

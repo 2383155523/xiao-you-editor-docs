@@ -10,11 +10,6 @@ const nav = [
     ]
   },
   {
-    text: 'Demo',
-    activeMatch: `^/demo/`,
-    link: 'https://2383155523.github.io/xiao-you-editor-example/#/editor-custom'
-  },
-  {
     text: '小组件',
     activeMatch: `^/components/`,
     link: '/components/'
@@ -27,6 +22,11 @@ const nav = [
       { text: '版本发布', link: '/about/releases' },
       { text: '作者', link: '/about/creator' }
     ]
+  },
+  {
+    text: 'Playground',
+    activeMatch: `^/Playground/`,
+    link: 'https://fuyouplus.gitee.io/xiao-you-editor/#/index'
   }
 ]
 const sidebar = {
@@ -45,20 +45,36 @@ const sidebar = {
       text: 'Props配置',
       items: [
         {
-          text: 'v-model(通用)',
+          text: 'v-model',
           link: '/guide/props/v-model'
         },
         {
-          text: 'utils(通用)',
-          link: '/guide/props/utils'
+          text: 'theme',
+          link: '/guide/props/theme'
         },
         {
-          text: 'styles(通用)',
+          text: 'borderRadius',
+          link: '/guide/props/borderRadius'
+        },
+        {
+          text: 'fontFamily',
+          link: '/guide/props/fontFamily'
+        },
+        {
+          text: 'transitionMode',
+          link: '/guide/props/transitionMode'
+        },
+        {
+          text: 'styles',
           link: '/guide/props/styles'
         },
         {
-          text: 'renderer(MD)',
-          link: '/guide/props/renderer'
+          text: 'templates',
+          link: '/guide/props/templates'
+        },
+        {
+          text: 'customParser',
+          link: '/guide/props/customParser'
         }
       ]
     },
