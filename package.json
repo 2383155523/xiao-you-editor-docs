@@ -32,7 +32,7 @@
     "lint:fail": "prettier --check --parser typescript \"{__tests__,docs,src,types}/**/*.ts\"",
     "type": "tsc --noEmit",
     "test": "npm run lint && npm run type",
-    "dev": "vitepress dev demo",
+    "dev": "vitepress dev demo --open",
     "build": "vitepress build demo",
     "serve": "npm run demo-build && vitepress serve demo"
   },

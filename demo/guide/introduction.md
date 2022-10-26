@@ -2,7 +2,7 @@
 
 :::tip 使用本插件建议拥有的知识储备
 
-- 因为本插件是基于 [Vue3](https://staging-cn.vuejs.org/) 构建 所以建议您最好拥有 [Vue3](https://staging-cn.vuejs.org/) 的使用经验。
+- 因为本插件是基于 [Vue3](https://cn.vuejs.org/) 构建 所以建议您最好拥有 [Vue3](https://cn.vuejs.org/) 的使用经验。
   :::
 
 ## 为什么要使用 XiaoYouEditor?
