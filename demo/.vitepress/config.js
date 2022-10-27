@@ -1,5 +1,6 @@
 const getBase = require("../../src/vitepress/config/baseConfig")
 const path = require("path")
+const { resolve } = require("path")
 const nav = [
   {
     text: "文档",
