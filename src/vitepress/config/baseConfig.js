@@ -6,62 +6,60 @@
  */
 
 // for local-linked development
-const deps = ['@vue/theme', '@vueuse/core', 'body-scroll-lock']
+const deps = ["@vue/theme", "@vueuse/core", "body-scroll-lock"]
 
 /**
  * @type {() => Promise<import('vitepress').UserConfig>}
  */
 module.exports = async () => ({
+  base: "/xiao-you-editor-docs/",
   vite: {
     ssr: {
-      noExternal: deps
+      noExternal: deps,
     },
     optimizeDeps: {
-      exclude: deps
-    }
+      exclude: deps,
+    },
   },
 
   head: [
     [
-      'link',
+      "link",
       {
-        rel: 'icon',
-        href: '/logo.svg'
-      }
+        rel: "icon",
+        href: "https://fuyouplus.gitee.io/xiao-you-editor/assets/logo.21907c32.png",
+      },
     ],
-    ...(process.env.NODE_ENV === 'production'
+    ...(process.env.NODE_ENV === "production"
       ? [
           [
-            'link',
+            "link",
             {
-              rel: 'preload',
-              href: '/assets/inter-latin.7b37fe23.woff2',
-              as: 'font',
-              type: 'font/woff2',
-              crossorigin: 'anonymous'
-            }
-          ]
+              rel: "preload",
+              href: "/assets/inter-latin.7b37fe23.woff2",
+              as: "font",
+              type: "font/woff2",
+              crossorigin: "anonymous",
+            },
+          ],
         ]
       : []),
     [
-      'script',
+      "script",
       {},
-      require('fs').readFileSync(
-        require('path').resolve(
-          __dirname,
-          './inlined-scripts/applyDarkMode.js'
-        ),
-        'utf-8'
-      )
-    ]
+      require("fs").readFileSync(
+        require("path").resolve(__dirname, "./inlined-scripts/applyDarkMode.js"),
+        "utf-8"
+      ),
+    ],
   ],
 
   markdown: {
-    highlight: await require('./highlight')()
+    highlight: await require("./highlight")(),
   },
 
-  shouldPreload: (link) => {
+  shouldPreload: link => {
     // make algolia chunk prefetch instead of preload
-    return !link.includes('Algolia')
-  }
+    return !link.includes("Algolia")
+  },
 })

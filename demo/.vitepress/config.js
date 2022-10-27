@@ -77,8 +77,7 @@ const nav = [
     text: "关于",
     activeMatch: `^/about/`,
     items: [
-      { text: "常见问题", link: "/about/faq" },
-      { text: "版本发布", link: "/about/releases" },
+      // { text: "版本发布", link: "/about/releases" },
       { text: "作者", link: "/about/creator" },
     ],
   },
@@ -180,6 +179,7 @@ module.exports = (async () => {
     title: "XiaoYouEditor",
     description: "XiaoYouEditor - 一款用于生成花里胡哨博客内容的编辑器",
     themeConfig: {
+      lastUpdatedText: "Updated Date",
       footer: {
         license: {
           text: "MIT License",
@@ -187,11 +187,17 @@ module.exports = (async () => {
         },
         copyright: `Copyright © 2022-至今 微若蜉蝣`,
       },
-      logo: "https://fuyouplus.gitee.io/xiao-you-editor/assets/logo.21907c32.png",
+      logo: {
+        src: "https://fuyouplus.gitee.io/xiao-you-editor/assets/logo.21907c32.png",
+      },
       socialLinks: [
         {
           icon: "github",
           link: "https://github.com/2383155523/xiao-you-editor",
+        },
+        {
+          icon: "gitee",
+          link: "https://gitee.com/fuyouplus/xiao-you-editor",
         },
       ],
       nav,
