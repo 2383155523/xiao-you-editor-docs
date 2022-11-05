@@ -1,0 +1,12 @@
+import { _ as _export_sfc, c as createElementBlock, o as openBlock, a as createStaticVNode } from "./app.be653b67.js";
+const __pageData = '{"title":"Custom Parser","description":"","frontmatter":{},"headers":[{"level":2,"title":"\u914D\u7F6E\u793A\u4F8B","slug":"\u914D\u7F6E\u793A\u4F8B"}],"relativePath":"guide/props/customParser.md","lastUpdated":1666452096533}';
+const _sfc_main = {};
+const _hoisted_1 = /* @__PURE__ */ createStaticVNode("", 6);
+const _hoisted_7 = [
+  _hoisted_1
+];
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", null, _hoisted_7);
+}
+var customParser = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+export { __pageData, customParser as default };

@@ -10,10 +10,7 @@
     <p class="actions">
       <!-- NOTE: hide the home video -->
       <!-- <vue-mastery-modal /> -->
-      <a
-        class="get-started"
-        href="/xiao-you-editor-docs/guide/introduction.html"
-      >
+      <a class="get-started" href="/xiao-you-editor-docs/guide/introduction.html">
         快速开始
         <svg
           class="icon"
@@ -27,23 +24,18 @@
           />
         </svg>
       </a>
-      <a class="setup" href="/xiao-you-editor-docs/guide/quick-start.html"
-        >安装</a
-      >
+      <a class="setup" href="/xiao-you-editor-docs/guide/quick-start.html">安装</a>
     </p>
   </section>
 
   <section id="highlights" class="vt-box-container">
     <div class="vt-box">
       <h2>差量更新</h2>
-      <p>基于 Vue3 自动实现 Virtual DOM 差量Diif 避免了较长内容下修改时的渲染卡顿 </p>
+      <p>基于 Vue3 自动实现 Virtual DOM 差量Diif 避免了较长内容下修改时的渲染卡顿</p>
     </div>
     <div class="vt-box">
       <h2>渲染万物</h2>
-      <p>
-        可被渲染的内容小到一行文字 大到一个Vue组件
-        只需注册全局组件便可直接在编辑器中书写渲染
-      </p>
+      <p>可被渲染的内容小到一行文字 大到一个Vue组件 只需注册全局组件便可直接在编辑器中书写渲染</p>
     </div>
     <div class="vt-box">
       <h2>颜值较高</h2>
@@ -53,7 +45,7 @@
       </p>
     </div>
   </section>
-  <div style="height: 94px"></div>
+  <div style="height: 40px"></div>
 </template>
 
 <style scoped>
