@@ -85,7 +85,7 @@ const nav = [
   {
     text: "Playground",
     activeMatch: `^/Playground/`,
-    link: "https://fuyouplus.gitee.io/xiao-you-editor/#/index",
+    link: "https://xiao-you-editor.netlify.app",
   },
 ]
 const sidebar = {

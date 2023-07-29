@@ -22,4 +22,4 @@ createApp(App).use(xiaoYouEditor).mount("#app")
 
 > 安装完成后将会在注册一个全局组件 `<xy-editor></xy-editor>`
 
-> 更多的使用方法请前往官方使用文档查看 https://2383155523.github.io/xiao-you-editor-docs/
+> 更多的使用方法请前往官方使用文档查看 https://xiao-you-editor-docs.netlify.app/

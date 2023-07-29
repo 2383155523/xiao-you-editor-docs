@@ -11,7 +11,7 @@ const { page } = useData()
 const closeSideBar = inject('close-sidebar') as () => void
 
 const isActiveLink = (relativePath: string, link: string) => {
-  link = link.replace('/xiao-you-editor-docs/', '')
+  link = link.replace('/', '')
   link = link.replace('.html', '')
   relativePath = relativePath.replace('.md', '')
   return relativePath == link

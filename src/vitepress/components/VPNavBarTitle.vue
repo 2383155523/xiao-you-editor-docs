@@ -1,5 +1,5 @@
 <template>
-  <a class="VPNavBarTitle" :href="href">
+  <a class="VPNavBarTitle" href="/">
     <slot name="navbar-title">
       <img src="../../public/logo.png" alt="" class="logo" />
       <span class="text">xiaoYouEditor</span>
@@ -8,12 +8,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-const href = ref<string>(
-  import.meta.env.DEV
-    ? "/xiao-you-editor-docs/"
-    : "https://fuyouplus.gitee.io/xiao-you-editor-docs/"
-)
+// import { ref } from "vue"
+// const href = "/"
+//  ref<string>(import.meta.env.DEV ? "/" : "/")
 </script>
 <style scoped>
 .VPNavBarTitle {

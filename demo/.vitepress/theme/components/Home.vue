@@ -8,9 +8,9 @@
     </h1>
     <p class="description">一个用于生成花里胡哨内容的编辑器(Vue3插件)</p>
     <p class="actions">
-      <!-- NOTE: hide the home video -->
+      <!-- NOTE: hide the  video -->
       <!-- <vue-mastery-modal /> -->
-      <a class="get-started" href="/xiao-you-editor-docs/guide/introduction.html">
+      <a class="get-started" href="/guide/introduction.html">
         快速开始
         <svg
           class="icon"
@@ -24,7 +24,7 @@
           />
         </svg>
       </a>
-      <a class="setup" href="/xiao-you-editor-docs/guide/quick-start.html">安装</a>
+      <a class="setup" href="/guide/quick-start.html">安装</a>
     </p>
   </section>
 

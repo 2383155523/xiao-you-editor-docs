@@ -43,7 +43,7 @@
 
 “小弟贴心的为各位大哥提供了一堆现成的实用功能组件”
 
-这些[小组件](https://fuyouplus.cn)可都是作者多年积攒的精华哟 ~。~
+这些[小组件](/customComponents/intro.html)可都是作者多年积攒的精华哟 ~。~
 
 说到这儿 您是不是以为这就是本插件骚操作的极限了吗？
 
@@ -67,4 +67,4 @@
 
 ## Playground Online
 
-[点我在线体验](https://fuyouplus.gitee.io/xiao-you-editor/#/index)
+[点我在线体验](https://xiao-you-editor.netlify.app)
