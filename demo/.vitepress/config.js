@@ -174,7 +174,7 @@ module.exports = (async () => {
         },
       },
     },
-    base: "/xiao-you-editor-docs/",
+    // base: "/xiao-you-editor-docs/",
     lastUpdated: true,
     lang: "zh-CN",
     title: "XiaoYouEditor",
