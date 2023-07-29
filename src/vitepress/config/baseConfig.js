@@ -12,7 +12,7 @@ const deps = ["@vue/theme", "@vueuse/core", "body-scroll-lock"]
  * @type {() => Promise<import('vitepress').UserConfig>}
  */
 module.exports = async () => ({
-  base: "/xiao-you-editor-docs/",
+  // base: "/xiao-you-editor-docs/",
   vite: {
     ssr: {
       noExternal: deps,
