@@ -1,0 +1,6 @@
+[build]
+  command = "pnpm install --no-frozen-lockfile && pnpm run build"
+  publish = "demo/.vitepress/dist"
+
+[context.production.environment]
+  PNPM_VERSION = "5.4.0"
